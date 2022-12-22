@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="keep_heroes"
+        android:summary="Rolling does not delete heroes from the list"
+        android:title="Keep Heroes" />
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="balance_team"
+        android:summary="Will choose a balanced team (Only Works with three or more people)"
+        android:title="Balance team" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/number_entries"
+        android:entryValues="@array/number_values"
+        android:key="player_num"
+        android:title="Number Of Players"
+        app:summary="Choose Number of players" />
+</PreferenceScreen>
