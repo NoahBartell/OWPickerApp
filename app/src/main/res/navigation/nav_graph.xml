@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.myfirstapp.FirstFragment"
+        android:name="com.noah.myfirstapp.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.myfirstapp.SecondFragment"
+        android:name="com.noah.myfirstapp.SecondFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.myfirstapp.MainFragment"
+        android:name="com.noah.myfirstapp.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

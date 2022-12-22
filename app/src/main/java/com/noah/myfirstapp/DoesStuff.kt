@@ -1,4 +1,4 @@
-package com.example.myfirstapp
+package com.noah.myfirstapp
 
 object DoesStuff{
     var playernum: Int = 1

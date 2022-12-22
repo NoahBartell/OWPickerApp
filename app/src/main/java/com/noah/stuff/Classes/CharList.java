@@ -1,7 +1,10 @@
-package com.example.stuff.Classes;
+package com.noah.stuff.Classes;
 import java.util.ArrayList;
 import java.util.Random;
-import com.example.stuff.Enums.*;
+import com.noah.stuff.Enums.*;
+import com.noah.stuff.Enums.dps;
+import com.noah.stuff.Enums.support;
+import com.noah.stuff.Enums.tanks;
 
 public class CharList {
     ArrayList<Character> HeroList;
@@ -42,7 +45,7 @@ public class CharList {
 
     public ArrayList<Character> setCharacters(){
         ArrayList<Character> hero = new ArrayList<Character>();
-        for(dps dps : dps.values()){
+        for(com.noah.stuff.Enums.dps dps : dps.values()){
             hero.add(new Character(dps.toString(), "Dps"));
         }
         for(support sup : support.values()){
@@ -64,9 +67,6 @@ public class CharList {
     public String getRoll(){
         if(HeroList.size() >= times){
             String buildString = "";
-//            if(isBalanced && times > 2){
-//                Character Hero = getHero();
-//            }
 
             for (int i = 0; i < times; i++) {
                 int num = i+1;

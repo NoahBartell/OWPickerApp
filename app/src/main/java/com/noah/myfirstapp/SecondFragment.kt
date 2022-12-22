@@ -1,4 +1,4 @@
-package com.example.myfirstapp
+package com.noah.myfirstapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.myfirstapp.R
 import com.example.myfirstapp.databinding.FragmentSecondBinding
 
 /**

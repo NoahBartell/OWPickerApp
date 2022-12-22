@@ -1,15 +1,11 @@
-package com.example.myfirstapp
+package com.noah.myfirstapp
 
-import android.R
-import android.content.Context
-import android.content.SharedPreferences
 //import android.content.*
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import com.example.myfirstapp.databinding.FragmentMainBinding
-import com.example.stuff.Classes.CharList
-import com.example.myfirstapp.MainActivity.Companion.MyCharList
+import com.noah.myfirstapp.MainActivity.Companion.MyCharList
 
 class MainFragment : Fragment() {
 

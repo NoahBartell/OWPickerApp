@@ -1,4 +1,4 @@
-package com.example.myfirstapp
+package com.noah.myfirstapp
 
 import android.content.Context
 import android.content.Intent
@@ -12,9 +12,10 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.myfirstapp.R
 import com.example.myfirstapp.databinding.ActivityMainBinding
-import com.example.stuff.Classes.*
-import com.google.android.material.snackbar.Snackbar
+import com.noah.stuff.Classes.*
+import com.noah.stuff.Classes.CharList
 
 class MainActivity : AppCompatActivity(), OnSharedPreferenceChangeListener {
 
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity(), OnSharedPreferenceChangeListener {
         sharedPreferences = getSharedPreferences( "settings", Context.MODE_PRIVATE)
         sharedPreferences.registerOnSharedPreferenceChangeListener(this)
         MyCharList.setBalanced(sharedPreferences.getBoolean("balance_team", false))
-        MyCharList.times = sharedPreferences.getString("player_num", "")?.toInt()!!
+        MyCharList.times = getNum(sharedPreferences.getString("player_num", ""))
         MyCharList.setKeepHeroes(sharedPreferences.getBoolean("keep_heroes", false))
         setSupportActionBar(binding.toolbar)
 
@@ -108,8 +109,19 @@ class MainActivity : AppCompatActivity(), OnSharedPreferenceChangeListener {
 
         if(p1 == "player_num") {
             if (p0 != null) {
-                MyCharList.times = p0.getString(p1, "")?.toInt()!!
+                MyCharList.times = getNum(p0.getString(p1, ""))
             }
+        }
+    }
+
+    private fun getNum(a: String?): Int{
+        return when (a){
+            "1" -> 1
+            "2" -> 2
+            "3" -> 3
+            "4" -> 4
+            "5" -> 5
+            else -> 0
         }
     }
 

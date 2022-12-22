@@ -1,4 +1,4 @@
-package com.example.stuff.Classes;
+package com.noah.stuff.Classes;
 
 
 public class Character{

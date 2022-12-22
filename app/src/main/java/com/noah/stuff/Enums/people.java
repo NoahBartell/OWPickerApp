@@ -1,4 +1,4 @@
-package com.example.stuff.Enums;
+package com.noah.stuff.Enums;
 
 public enum people {
     Noah,

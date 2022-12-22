@@ -1,8 +1,9 @@
-package com.example.myfirstapp
+package com.noah.myfirstapp
 
 import android.content.Context
 import android.os.Bundle
 import androidx.preference.*
+import com.example.myfirstapp.R
 
 class SettingsFragment : PreferenceFragmentCompat() {
     //val KHPreference: SwitchPreferenceCompat? = findPreference("keep_heroes")
